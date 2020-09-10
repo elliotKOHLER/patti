@@ -1,0 +1,365 @@
+/**
+ * RESET CSS
+ * COLOR
+ * POLICE
+ * ALIGN
+ * IMAGE
+ * PADDING
+ * DISPLAY
+ */
+:root{
+    --primary: #FE7E17;
+    --white: #FFFFFF;
+    --gutter: 0.938rem;/*15px*/
+    --gutter-1: 0.875rem;/*14px*/
+    --gutter-2: 1.25rem;/*20px*/
+    --gutter-3: 2.188rem;/*35px*/
+}
+
+/*------------------------------------*\
+  Reset CSS
+\*------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*------------------------------------*\
+  COLOR
+\*------------------------------------*/
+#hello{
+    background-image: url(IMAGES-HTML/Personnes-assises-noir-et-blanc.jpg);
+    height: 31rem;
+}
+
+#services,#hello,.section-twitter,.section-quote{
+    background-size: cover;
+}
+
+#services{
+    background-image: url(IMAGES-HTML/ville-vue-du-dessus.jpg);
+}
+
+.section-twitter{
+    background-image: url(IMAGES-HTML/bord-de-mer-ponton.jpg);
+}
+
+.section-quote{
+    background-image: url(IMAGES-HTML/paysage-de-mer-avec-personnes.jpg);
+}
+
+#contact{
+    background-image: url(IMAGES-HTML/bureau-interieur.jpg);
+}
+
+.section-partners{
+    background-color: var(--primary);
+}
+
+.section-blog__quote{
+    background-color: #323232;
+}
+
+h1,.team-text,.card-team__name,.services__text,.about__heading2,.about__heading2bis,.card-team__role,.facts__number,.blog__link, a,.testimonials__function,.quote-einstein__link{
+    color: #323232;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.blog__read-more:hover,.footer__legal,.card-team__social,.footer__legal,.footer-socialmedia__item,.menu-work__item,.blog__date{
+    color: #686868;
+}
+
+.section-blog__color,.section-quote,.twitter__heading-2,.section__twitter-date,.section-twitter__tweet,.section-twitter__item2,.box__hover:hover{
+    color: var(--white);
+}
+
+.section-twitter__item,.section-testimonials__author,.main-menu__item:active,.card-team__social:hover,.blog__read-more{
+    color: var(--primary);
+}
+
+progress{
+    width: 100%;
+    height: 0.625rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+}
+progress[value]{
+    -webkit-appearance: none;
+     appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+    background-color: #EFEFEF;    
+}
+progress[value]::-webkit-progress-value{
+    background-color: var(--primary);
+}
+
+.box__hover:hover{
+    background-color: var(--primary);
+}
+
+img{
+    max-width: 100%;
+}
+
+.line{
+    width: 10%;
+    height: 0.02rem;
+    background-color:#fe7f17;
+  }
+
+/*------------------------------------*\
+  POLICE
+\*------------------------------------*/
+h1{
+    font-size: 2.25rem;
+}
+
+p,.quote__author{
+    font-size: 0.938
+}
+
+h1,p,.team-text,.card-team__role,.quote__text,.menu-work__item{
+    font-weight: 300;
+}
+
+.main-menu__item,.about__heading2,.about__heading2bis,.card-team__name,.facts__number,.service__heading2,.blog__link,.blog__read-more{
+    font-weight: 800;
+}
+
+.facts__number{
+    font-size: 3.5rem;
+}
+
+h1,.about__heading2,about__heading2bis,.card-team__name,.quote__author{
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-menu__item:hover{
+    text-decoration: underline;
+}
+
+/*------------------------------------*\
+  DISPLAY
+\*------------------------------------*/
+.section-title{
+    border-bottom: 0.0625rem solid #FE7E17;
+    text-align: center;
+}
+
+.section-about,.section-team,.section-facts,.services,.section-blog,.section-testimonials,.section-partners,.section-work{
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
+
+/*MENU*/
+.menu,.menu-nav,.menu-nav__item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*SOUS-MENU*/
+.menu-nav__extra-item{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+}
+
+.menu-nav__item{
+    padding: 1rem;
+}
+
+/*ABOUT*/
+.panel-about-1,.panel-about-2{
+    display: flex;
+}
+
+.card-about,.card2-about{
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.card1-about{
+    flex: 2;
+    padding: 0.5rem;
+}
+
+.about__text{
+    overflow: hidden;
+}
+
+/*TEAM*/
+.team-text{
+    text-align: center;
+}
+
+.team-panel{
+    display: flex;
+    flex: 1;
+}
+
+.team-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    padding: 1rem;
+}
+
+.card-team__figure,.card-team__name,.card-team__role,.card-team__details{
+    text-align: center;
+}
+
+.team-reseaux{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card-team__social{
+    padding: 0.3rem;
+}
+/*SOME FUN FACTS*/
+.panel-facts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card1-facts,.card2-facts,.card3-facts,.card4-facts{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+/*SERVICES*/
+.services{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+    border: 0.05rem solid grey;
+}
+
+.services-box box__hover{
+    padding: 1rem;
+    border: 1rem;
+    border-color: gray;
+}
+
+/*FROM THE BLOG*/
+.section-blog__panel{
+    display: flex;
+}
+
+.section-blog__card{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.section-blog__article{
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.card-quote-1{
+    background-color: #323232;
+    color: whitesmoke;
+    margin: 1rem;
+    padding: 1rem;
+    border-color: white;
+}
+
+.card-quote-2{
+    margin: 1rem;
+    padding: 1rem;
+    border-color: white;
+}
+
+/*PARTNERS*/
+.section-partners__panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/*CONTACT*/
+.section-contact{
+    background-color: #323232;
+}
+
+.contact__panel{
+    display: flex;
+}
+
+.contact__card-1,.contact__card-2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.contact__card-2{
+    align-items: flex-start;
+}
+/*------------------------------------*\
+  OTHER
+\*------------------------------------*/
+html{
+    scroll-behavior: smooth;
+}
